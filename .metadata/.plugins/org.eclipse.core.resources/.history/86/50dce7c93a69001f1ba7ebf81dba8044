@@ -1,0 +1,9 @@
+package loteECamisetas.objeto;
+
+public class Camisetas {
+	
+	private char tamanho;
+	private String cor;
+	
+	
+}
