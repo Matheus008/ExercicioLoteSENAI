@@ -1,8 +1,0 @@
-package loteECamisetas.objeto;
-
-public class Lote {
-	
-	private int numeroDoLote;
-	private int q
-
-}
