@@ -1,0 +1,7 @@
+package lote.acoes;
+
+public class Despacho {
+	
+	private int codigoDeValidacao;
+	
+}

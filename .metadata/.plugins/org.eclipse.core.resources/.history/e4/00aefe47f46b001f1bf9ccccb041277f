@@ -1,0 +1,9 @@
+Feature: Produção de camisetas 
+  Scenario: Gerar número de lote e mostrar quantidade de camisetas por tamanho e cor
+    Given A quantidade total do lote é 30 camisetas
+    And Sendo 10 camisetas da 
+    When I complete action
+    And some other action
+    And yet another action
+    Then I validate the outcomes
+    And check more outcomes

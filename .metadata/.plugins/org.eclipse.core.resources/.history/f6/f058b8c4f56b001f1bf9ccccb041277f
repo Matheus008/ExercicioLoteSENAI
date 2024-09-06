@@ -1,0 +1,8 @@
+package lote.runners;
+
+
+
+@RunWith
+public class runnWith {
+
+}

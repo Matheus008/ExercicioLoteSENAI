@@ -1,0 +1,55 @@
+package lote.steps;
+
+import static org.junit.Assert.assertTrue;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import lote.acoes.NotaFiscal;
+import loteECamisetas.objeto.Lote;
+
+public class stepsLote {
+	
+	private Lote lote;
+	private NotaFiscal notaFiscal;
+	
+	@Given("A quantidade total do lote que é {int} camisetas")
+	public void aQuantidadeTotalDoLoteQueÉCamisetas(Integer quantidadeTotal) {
+	    lote = new Lote(quantidadeTotal);
+	}
+	@Given("Sendo {int} camisetas da cor {string} e tamanho {char}")
+	public void sendoCamisetasDaCorETamanho(Integer quantidade, String cor, char tamanho) {
+	    
+		int quantidadeTotal;
+		
+		lote.adicionarCamisas(quantidade, tamanho, cor);
+	    
+		quantidadeTotal += quantidade;
+		
+	    if(lote.getQuantidadeTotalDePecas() < lote.listarCamisas(). )
+	}
+	@Given("Coloca a produção como finalizada")
+	public void colocaAProduçãoComoFinalizadaGeraOCódigoDoLote() {
+	    lote.producaoFinalizada();
+	}
+	@When("Finalizada emite o número da nota fiscal")
+	public void finalizadaEmiteONúmeroDaNotaFiscal() {
+	    assertTrue(lote.isProducaoFinalizada());
+	    notaFiscal = new NotaFiscal(lote);
+	}
+	@Then("Coloca o lote como pronto para envio")
+	public void colocaOLoteComoProntoParaEnvio() {
+	    
+	}
+	@Then("É preparado para despacho")
+	public void éPreparadoParaDespacho() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+	@Then("Gera um código de validação")
+	public void geraUmCódigoDeValidação() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+}

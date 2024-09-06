@@ -2,21 +2,21 @@ package loteECamisetas.objeto;
 
 public class Camisetas {
 	
-	private char tamanho;
+	private String tamanho;
 	private String cor;
 	private int quantidade;
 	
-	public Camisetas(char tamanho, String cor, int quantidade) {
+	public Camisetas(String tamanho, String cor, int quantidade) {
 		this.tamanho = tamanho;
 		this.cor = cor;
 		this.quantidade = quantidade;
 	}
 
-	public char getTamanho() {
+	public String getTamanho() {
 		return tamanho;
 	}
 
-	public void setTamanho(char tamanho) {
+	public void setTamanho(String tamanho) {
 		this.tamanho = tamanho;
 	}
 
@@ -40,7 +40,7 @@ public class Camisetas {
 	public String toString() {
 		return "Tamanho:" + tamanho 
 				+ "\n Cor: " + cor 
-				+ "\n Quantidade=" + quantidade;
+				+ "\n Quantidade: " + quantidade;
 	}
 	
 	
