@@ -2,7 +2,6 @@ package loteECamisetas.objeto;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Random;
 
 public class Lote {
 
@@ -10,21 +9,16 @@ public class Lote {
 	private LocalDate dataDaFabricacao;
 	private int quantidadeTotalDePecas;
 	private ArrayList<Camisetas> listaDeCamisetas = new ArrayList<>();
-	private boolean prontoParaEnvio = false;
+
 	private boolean producaoFinalizada = false;
 
 	public Lote() {
 	}
 
-	public Lote(int quantidadeTotalDePecas) {
-		this.numeroDoLote = gerarNumero();
+	public Lote(int quantidadeTotalDePecas,int numeroLote) {
+		this.numeroDoLote = numeroLote;
 		this.dataDaFabricacao = gerarDataDeFabricacao();
 		this.quantidadeTotalDePecas = quantidadeTotalDePecas;
-	}
-
-	public int gerarNumero() {
-		Random numeroAleatorio = new Random();
-		return numeroAleatorio.nextInt(1000);
 	}
 
 	public LocalDate gerarDataDeFabricacao() {
@@ -35,61 +29,50 @@ public class Lote {
 		listaDeCamisetas.add(new Camisetas(tamanho, cor, quantidade));
 	}
 
-	public void prontoParaEnvio() {
-		prontoParaEnvio = true;
-	}
-	
+
 	public void producaoFinalizada() {
 		producaoFinalizada = true;
 	}
 
 	public String listarCamisas() {
+		
+		String lista = "";
+		
 		for(Camisetas camisetas : listaDeCamisetas) {
-			return camisetas.toString()
-			+"\n --------------------------------------------------------";
+			lista += camisetas.toString()
+			+"\n --------------------------------------------------------\n"; 
 		}
-		return null;
+		return lista;
+
 	}
 
 	public int getQuantidadeTotalDePecas() {
 		return quantidadeTotalDePecas;
 	}
 
-	public void setQuantidadeTotalDePecas(int quantidadeTotalDePecas) {
-		this.quantidadeTotalDePecas = quantidadeTotalDePecas;
-	}
-
 	public int getNumeroDoLote() {
 		return numeroDoLote;
-	}
-
-	public void setNumeroDoLote(int numeroDoLote) {
-		this.numeroDoLote = numeroDoLote;
-	}
-
-	public boolean isProntoParaEnvio() {
-		return prontoParaEnvio;
-	}
-
-	public void setProntoParaEnvio(boolean prontoParaEnvio) {
-		this.prontoParaEnvio = prontoParaEnvio;
 	}
 
 	public boolean isProducaoFinalizada() {
 		return producaoFinalizada;
 	}
 
-	public void setProducaoFinalizada(boolean emProducaoFinalizada) {
-		this.producaoFinalizada = emProducaoFinalizada;
+
+
+	public LocalDate getDataDaFabricacao() {
+		return dataDaFabricacao;
 	}
-	
-	
+
+	public ArrayList<Camisetas> getListaDeCamisetas() {
+		return listaDeCamisetas;
+	}
 
 	@Override
 	public String toString() {
-		return "NF: " + numeroDoLote + " dataDaFabricacao=" + dataDaFabricacao
-				+ "\n quantidadeTotalDePecas: " + quantidadeTotalDePecas 
-				+ ", listaDeCamisetas: \n" + listarCamisas();
+		return "Lote: " + numeroDoLote + " data de fabricacao: " + dataDaFabricacao
+				+ "\nquantidade total de peças: " + quantidadeTotalDePecas 
+				+ ",\nlista de camisetas: \n" + listarCamisas();
 	}
 	
 	

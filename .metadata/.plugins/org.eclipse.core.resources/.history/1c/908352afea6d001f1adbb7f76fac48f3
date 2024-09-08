@@ -1,0 +1,22 @@
+Feature: Produção de camisetas
+	Scenario: Foram fabricados camisetas da cor azul
+		Given A quantidade total de itens que é 30 gera um número identificador e a data de fabricação
+		And Cadastra 10 camisetas da cor "Azul" e tamanho "P"
+		And Cadastra 10 camisetas da cor "Azul" e tamanho "M"
+		And Cadastra 10 camisetas da cor "Azul" e tamanho "G"
+		And Muda o status da produção como finalizada
+		When Finalizada a produção uma nota fiscal é emitida para cada lote
+		And Detalhando as informações do lote e lista as camisetas do lote
+		Then Gera um código de validação para o despacho
+		And o lote é marcado como pronto para envio
+		
+	Scenario: Foram fabricados camisetas da cor branco
+		Given A quantidade total de itens que é 30 gera um número identificador e a data de fabricação
+		And Cadastra 10 camisetas da cor "Azul" e tamanho "P"
+		And Cadastra 10 camisetas da cor "Azul" e tamanho "M"
+		And Cadastra 10 camisetas da cor "Azul" e tamanho "G"
+		And Muda o status da produção como finalizada
+		When Finalizada a produção uma nota fiscal é emitida para cada lote
+		And Detalhando as informações do lote e lista as camisetas do lote
+		Then Gera um código de validação para o despacho
+		And o lote é marcado como pronto para envio

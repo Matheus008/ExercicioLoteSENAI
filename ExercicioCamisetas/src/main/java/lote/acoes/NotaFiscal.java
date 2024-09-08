@@ -8,10 +8,9 @@ public class NotaFiscal {
 	
 	private int numeroDaNotaFiscal;
 	private Lote lote;
+	private boolean notaFiscalEmitida = false;
 
-	public NotaFiscal(Lote lote) {
-		this.numeroDaNotaFiscal = gerarNumero();
-		this.lote = lote;
+	public NotaFiscal() {
 	}
 		
 	public int gerarNumero() {
@@ -19,15 +18,25 @@ public class NotaFiscal {
 		return numeroAleatorio.nextInt(1000);
 	}
 	
-	public void emitirNotaFiscal() {
+	public void emitirNotaFiscal(Lote lote) {
 		numeroDaNotaFiscal = gerarNumero();
-		
+		this.lote = lote;
+		this.notaFiscalEmitida = true;
 	}
 	
 	public String conteudoDaNotaFiscal() {
 			return "-----INFORMAÇÕES-----"
-					+"\n NF: "+numeroDaNotaFiscal
+					+"\nNF: "+numeroDaNotaFiscal
 					+"\n"+lote.toString();
 
 	}
+
+	public boolean isNotaFiscalEmitida() {
+		return notaFiscalEmitida;
+	}
+
+	public int getNumeroDaNotaFiscal() {
+		return numeroDaNotaFiscal;
+	}
+	
 }

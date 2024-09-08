@@ -6,11 +6,14 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="prontoParaDespacho"/>
 		<list key="findhistory">
+			<item value="prontoParaEnvio"/>
+			<item value="prontoParaDespacho"/>
 			<item value="producaoFinalizada"/>
 		</list>
 		<list key="replacehistory">
+			<item value="prontoParaDespacho"/>
 			<item value=""/>
 		</list>
 	</section>

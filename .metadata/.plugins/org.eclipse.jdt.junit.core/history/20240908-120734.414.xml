@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="runnWith (1)" project="ExercicioCamisetas" tests="3" started="3" failures="3" errors="0" ignored="0">
+  <testsuite name="lote.runners.runnWith" time="0.099" displayname="runnWith" uniqueid="[engine:junit-vintage]/[runner:lote.runners.runnWith]">
+    <testsuite name="Produção de camisetas" time="0.099" uniqueid="[engine:junit-vintage]/[runner:lote.runners.runnWith]/[test:rO0ABXNyAClpby5jdWN1bWJlci5qdW5pdC5GZWF0dXJlUnVubmVyJEZlYXR1cmVJZAAAAAAAAAABAgABTAADdXJpdAAOTGphdmEvbmV0L1VSSTt4cHNyAAxqYXZhLm5ldC5VUkmsAXguQ55JqwMAAUwABnN0cmluZ3QAEkxqYXZhL2xhbmcvU3RyaW5nO3hwdAB7ZmlsZTovLy9EOi9Qcm9ncmFtYcOnw6NvL1dvcmtzcGFjZS9Xb3Jrc3BhY2UtRWNsaXBzZS9TRU5BSS9FeGVyY2ljaW9DYW1pc2V0YXMvc3JjL3Rlc3QvcmVzb3VyY2VzL2ZlYXR1cmVsb3RlY2FtaXNhcy5mZWF0dXJleA==]">
+      <testcase name="Foram fabricados camisetas da cor azul" classname="Foram fabricados camisetas da cor azul" time="0.082" uniqueid="[engine:junit-vintage]/[runner:lote.runners.runnWith]/[test:rO0ABXNyAClpby5jdWN1bWJlci5qdW5pdC5GZWF0dXJlUnVubmVyJEZlYXR1cmVJZAAAAAAAAAABAgABTAADdXJpdAAOTGphdmEvbmV0L1VSSTt4cHNyAAxqYXZhLm5ldC5VUkmsAXguQ55JqwMAAUwABnN0cmluZ3QAEkxqYXZhL2xhbmcvU3RyaW5nO3hwdAB7ZmlsZTovLy9EOi9Qcm9ncmFtYcOnw6NvL1dvcmtzcGFjZS9Xb3Jrc3BhY2UtRWNsaXBzZS9TRU5BSS9FeGVyY2ljaW9DYW1pc2V0YXMvc3JjL3Rlc3QvcmVzb3VyY2VzL2ZlYXR1cmVsb3RlY2FtaXNhcy5mZWF0dXJleA==]/[test:rO0ABXNyAChpby5jdWN1bWJlci5qdW5pdC5QaWNrbGVSdW5uZXJzJFBpY2tsZUlkAAAAAAAAAAECAAJJAApwaWNrbGVMaW5lTAADdXJpdAAOTGphdmEvbmV0L1VSSTt4cAAAAAJzcgAMamF2YS5uZXQuVVJJrAF4LkOeSasDAAFMAAZzdHJpbmd0ABJMamF2YS9sYW5nL1N0cmluZzt4cHQAe2ZpbGU6Ly8vRDovUHJvZ3JhbWHDp8Ojby9Xb3Jrc3BhY2UvV29ya3NwYWNlLUVjbGlwc2UvU0VOQUkvRXhlcmNpY2lvQ2FtaXNldGFzL3NyYy90ZXN0L3Jlc291cmNlcy9mZWF0dXJlbG90ZWNhbWlzYXMuZmVhdHVyZXg=]">
+        <failure>org.opentest4j.MultipleFailuresError: Multiple Failures (2 failures)&#13;
+	io.cucumber.junit.UndefinedStepException: The step 'A quantidade total de itens: 30 lote: 123 data de fabricação:"25/09/2024' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Given("A quantidade total de itens: {int} lote: {int} data de fabricação:\"{int}\\/{int}\\/{int}")
+public void aQuantidadeTotalDeItensLoteDataDeFabricação(Integer int1, Integer int2, Integer int3, Integer int4, Integer int5) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+	java.lang.NullPointerException: Cannot invoke "lote.acoes.NotaFiscal.conteudoDaNotaFiscal()" because "this.notaFiscal" is null&#13;
+	at org.junit.vintage.engine.execution.TestRun.getStoredResultOrSuccessful(TestRun.java:200)&#13;
+	at org.junit.vintage.engine.execution.RunListenerAdapter.fireExecutionFinished(RunListenerAdapter.java:248)&#13;
+	at org.junit.vintage.engine.execution.RunListenerAdapter.testFinished(RunListenerAdapter.java:214)&#13;
+	at org.junit.vintage.engine.execution.RunListenerAdapter.testFinished(RunListenerAdapter.java:88)&#13;
+	at org.junit.runner.notification.SynchronizedRunListener.testFinished(SynchronizedRunListener.java:87)&#13;
+	at org.junit.runner.notification.RunNotifier$9.notifyListener(RunNotifier.java:225)&#13;
+	at org.junit.runner.notification.RunNotifier$SafeNotifier.run(RunNotifier.java:72)&#13;
+	at org.junit.runner.notification.RunNotifier.fireTestFinished(RunNotifier.java:222)&#13;
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:150)&#13;
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)&#13;
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#13;
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#13;
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)&#13;
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)&#13;
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)&#13;
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#13;
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#13;
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:147)&#13;
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:162)&#13;
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:145)&#13;
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#13;
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)&#13;
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)&#13;
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)&#13;
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)&#13;
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:95)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:91)&#13;
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:60)&#13;
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:98)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+	Suppressed: io.cucumber.junit.UndefinedStepException: The step 'A quantidade total de itens: 30 lote: 123 data de fabricação:"25/09/2024' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Given("A quantidade total de itens: {int} lote: {int} data de fabricação:\"{int}\\/{int}\\/{int}")
+public void aQuantidadeTotalDeItensLoteDataDeFabricação(Integer int1, Integer int2, Integer int3, Integer int4, Integer int5) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+	Suppressed: java.lang.NullPointerException: Cannot invoke "lote.acoes.NotaFiscal.conteudoDaNotaFiscal()" because "this.notaFiscal" is null&#13;
+		at lote.acoes.Despacho.toString(Despacho.java:44)&#13;
+		at lote.steps.stepsLote.adicionarNaListaDeDespacho(stepsLote.java:95)&#13;
+&#13;
+</failure>
+      </testcase>
+      <testcase name="Foram fabricados camisetas da cor branco" classname="Foram fabricados camisetas da cor branco" time="0.008" uniqueid="[engine:junit-vintage]/[runner:lote.runners.runnWith]/[test:rO0ABXNyAClpby5jdWN1bWJlci5qdW5pdC5GZWF0dXJlUnVubmVyJEZlYXR1cmVJZAAAAAAAAAABAgABTAADdXJpdAAOTGphdmEvbmV0L1VSSTt4cHNyAAxqYXZhLm5ldC5VUkmsAXguQ55JqwMAAUwABnN0cmluZ3QAEkxqYXZhL2xhbmcvU3RyaW5nO3hwdAB7ZmlsZTovLy9EOi9Qcm9ncmFtYcOnw6NvL1dvcmtzcGFjZS9Xb3Jrc3BhY2UtRWNsaXBzZS9TRU5BSS9FeGVyY2ljaW9DYW1pc2V0YXMvc3JjL3Rlc3QvcmVzb3VyY2VzL2ZlYXR1cmVsb3RlY2FtaXNhcy5mZWF0dXJleA==]/[test:rO0ABXNyAChpby5jdWN1bWJlci5qdW5pdC5QaWNrbGVSdW5uZXJzJFBpY2tsZUlkAAAAAAAAAAECAAJJAApwaWNrbGVMaW5lTAADdXJpdAAOTGphdmEvbmV0L1VSSTt4cAAAAA1zcgAMamF2YS5uZXQuVVJJrAF4LkOeSasDAAFMAAZzdHJpbmd0ABJMamF2YS9sYW5nL1N0cmluZzt4cHQAe2ZpbGU6Ly8vRDovUHJvZ3JhbWHDp8Ojby9Xb3Jrc3BhY2UvV29ya3NwYWNlLUVjbGlwc2UvU0VOQUkvRXhlcmNpY2lvQ2FtaXNldGFzL3NyYy90ZXN0L3Jlc291cmNlcy9mZWF0dXJlbG90ZWNhbWlzYXMuZmVhdHVyZXg=]">
+        <failure>org.opentest4j.MultipleFailuresError: Multiple Failures (2 failures)&#13;
+	io.cucumber.junit.UndefinedStepException: The step 'A quantidade total de itens: 30 lote: 123 data de fabricação:"25/09/2024' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Given("A quantidade total de itens: {int} lote: {int} data de fabricação:\"{int}\\/{int}\\/{int}")
+public void aQuantidadeTotalDeItensLoteDataDeFabricação(Integer int1, Integer int2, Integer int3, Integer int4, Integer int5) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+	java.lang.NullPointerException: Cannot invoke "lote.acoes.NotaFiscal.conteudoDaNotaFiscal()" because "this.notaFiscal" is null&#13;
+	at org.junit.vintage.engine.execution.TestRun.getStoredResultOrSuccessful(TestRun.java:200)&#13;
+	at org.junit.vintage.engine.execution.RunListenerAdapter.fireExecutionFinished(RunListenerAdapter.java:248)&#13;
+	at org.junit.vintage.engine.execution.RunListenerAdapter.testFinished(RunListenerAdapter.java:214)&#13;
+	at org.junit.vintage.engine.execution.RunListenerAdapter.testFinished(RunListenerAdapter.java:88)&#13;
+	at org.junit.runner.notification.SynchronizedRunListener.testFinished(SynchronizedRunListener.java:87)&#13;
+	at org.junit.runner.notification.RunNotifier$9.notifyListener(RunNotifier.java:225)&#13;
+	at org.junit.runner.notification.RunNotifier$SafeNotifier.run(RunNotifier.java:72)&#13;
+	at org.junit.runner.notification.RunNotifier.fireTestFinished(RunNotifier.java:222)&#13;
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:150)&#13;
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)&#13;
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#13;
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#13;
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)&#13;
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)&#13;
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)&#13;
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#13;
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#13;
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:147)&#13;
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:162)&#13;
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:145)&#13;
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#13;
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)&#13;
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)&#13;
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)&#13;
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)&#13;
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:95)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:91)&#13;
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:60)&#13;
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:98)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+	Suppressed: io.cucumber.junit.UndefinedStepException: The step 'A quantidade total de itens: 30 lote: 123 data de fabricação:"25/09/2024' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Given("A quantidade total de itens: {int} lote: {int} data de fabricação:\"{int}\\/{int}\\/{int}")
+public void aQuantidadeTotalDeItensLoteDataDeFabricação(Integer int1, Integer int2, Integer int3, Integer int4, Integer int5) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+	Suppressed: java.lang.NullPointerException: Cannot invoke "lote.acoes.NotaFiscal.conteudoDaNotaFiscal()" because "this.notaFiscal" is null&#13;
+		at lote.acoes.Despacho.toString(Despacho.java:44)&#13;
+		at lote.steps.stepsLote.adicionarNaListaDeDespacho(stepsLote.java:95)&#13;
+&#13;
+</failure>
+      </testcase>
+      <testcase name="Foram fabricados camisetas da cor preta" classname="Foram fabricados camisetas da cor preta" time="0.009" uniqueid="[engine:junit-vintage]/[runner:lote.runners.runnWith]/[test:rO0ABXNyAClpby5jdWN1bWJlci5qdW5pdC5GZWF0dXJlUnVubmVyJEZlYXR1cmVJZAAAAAAAAAABAgABTAADdXJpdAAOTGphdmEvbmV0L1VSSTt4cHNyAAxqYXZhLm5ldC5VUkmsAXguQ55JqwMAAUwABnN0cmluZ3QAEkxqYXZhL2xhbmcvU3RyaW5nO3hwdAB7ZmlsZTovLy9EOi9Qcm9ncmFtYcOnw6NvL1dvcmtzcGFjZS9Xb3Jrc3BhY2UtRWNsaXBzZS9TRU5BSS9FeGVyY2ljaW9DYW1pc2V0YXMvc3JjL3Rlc3QvcmVzb3VyY2VzL2ZlYXR1cmVsb3RlY2FtaXNhcy5mZWF0dXJleA==]/[test:rO0ABXNyAChpby5jdWN1bWJlci5qdW5pdC5QaWNrbGVSdW5uZXJzJFBpY2tsZUlkAAAAAAAAAAECAAJJAApwaWNrbGVMaW5lTAADdXJpdAAOTGphdmEvbmV0L1VSSTt4cAAAABhzcgAMamF2YS5uZXQuVVJJrAF4LkOeSasDAAFMAAZzdHJpbmd0ABJMamF2YS9sYW5nL1N0cmluZzt4cHQAe2ZpbGU6Ly8vRDovUHJvZ3JhbWHDp8Ojby9Xb3Jrc3BhY2UvV29ya3NwYWNlLUVjbGlwc2UvU0VOQUkvRXhlcmNpY2lvQ2FtaXNldGFzL3NyYy90ZXN0L3Jlc291cmNlcy9mZWF0dXJlbG90ZWNhbWlzYXMuZmVhdHVyZXg=]">
+        <failure>org.opentest4j.MultipleFailuresError: Multiple Failures (2 failures)&#13;
+	io.cucumber.junit.UndefinedStepException: The step 'A quantidade total de itens: 30 lote: 123 data de fabricação:"25/09/2024' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Given("A quantidade total de itens: {int} lote: {int} data de fabricação:\"{int}\\/{int}\\/{int}")
+public void aQuantidadeTotalDeItensLoteDataDeFabricação(Integer int1, Integer int2, Integer int3, Integer int4, Integer int5) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+	java.lang.NullPointerException: Cannot invoke "lote.acoes.NotaFiscal.conteudoDaNotaFiscal()" because "this.notaFiscal" is null&#13;
+	at org.junit.vintage.engine.execution.TestRun.getStoredResultOrSuccessful(TestRun.java:200)&#13;
+	at org.junit.vintage.engine.execution.RunListenerAdapter.fireExecutionFinished(RunListenerAdapter.java:248)&#13;
+	at org.junit.vintage.engine.execution.RunListenerAdapter.testFinished(RunListenerAdapter.java:214)&#13;
+	at org.junit.vintage.engine.execution.RunListenerAdapter.testFinished(RunListenerAdapter.java:88)&#13;
+	at org.junit.runner.notification.SynchronizedRunListener.testFinished(SynchronizedRunListener.java:87)&#13;
+	at org.junit.runner.notification.RunNotifier$9.notifyListener(RunNotifier.java:225)&#13;
+	at org.junit.runner.notification.RunNotifier$SafeNotifier.run(RunNotifier.java:72)&#13;
+	at org.junit.runner.notification.RunNotifier.fireTestFinished(RunNotifier.java:222)&#13;
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:150)&#13;
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)&#13;
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#13;
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#13;
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)&#13;
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)&#13;
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)&#13;
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#13;
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#13;
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:147)&#13;
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:162)&#13;
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:145)&#13;
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#13;
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)&#13;
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)&#13;
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)&#13;
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)&#13;
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:95)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:91)&#13;
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:60)&#13;
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:98)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+	Suppressed: io.cucumber.junit.UndefinedStepException: The step 'A quantidade total de itens: 30 lote: 123 data de fabricação:"25/09/2024' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Given("A quantidade total de itens: {int} lote: {int} data de fabricação:\"{int}\\/{int}\\/{int}")
+public void aQuantidadeTotalDeItensLoteDataDeFabricação(Integer int1, Integer int2, Integer int3, Integer int4, Integer int5) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+	Suppressed: java.lang.NullPointerException: Cannot invoke "lote.acoes.NotaFiscal.conteudoDaNotaFiscal()" because "this.notaFiscal" is null&#13;
+		at lote.acoes.Despacho.toString(Despacho.java:44)&#13;
+		at lote.steps.stepsLote.adicionarNaListaDeDespacho(stepsLote.java:95)&#13;
+&#13;
+</failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="runnWith (1)" project="ExercicioCamisetas" tests="3" started="3" failures="0" errors="3" ignored="0">
+  <testsuite name="lote.runners.runnWith" time="0.085" displayname="runnWith" uniqueid="[engine:junit-vintage]/[runner:lote.runners.runnWith]">
+    <testsuite name="Produção de camisetas" time="0.085" uniqueid="[engine:junit-vintage]/[runner:lote.runners.runnWith]/[test:rO0ABXNyAClpby5jdWN1bWJlci5qdW5pdC5GZWF0dXJlUnVubmVyJEZlYXR1cmVJZAAAAAAAAAABAgABTAADdXJpdAAOTGphdmEvbmV0L1VSSTt4cHNyAAxqYXZhLm5ldC5VUkmsAXguQ55JqwMAAUwABnN0cmluZ3QAEkxqYXZhL2xhbmcvU3RyaW5nO3hwdAB7ZmlsZTovLy9EOi9Qcm9ncmFtYcOnw6NvL1dvcmtzcGFjZS9Xb3Jrc3BhY2UtRWNsaXBzZS9TRU5BSS9FeGVyY2ljaW9DYW1pc2V0YXMvc3JjL3Rlc3QvcmVzb3VyY2VzL2ZlYXR1cmVsb3RlY2FtaXNhcy5mZWF0dXJleA==]">
+      <testcase name="Foram fabricados camisetas da cor azul" classname="Foram fabricados camisetas da cor azul" time="0.067" uniqueid="[engine:junit-vintage]/[runner:lote.runners.runnWith]/[test:rO0ABXNyAClpby5jdWN1bWJlci5qdW5pdC5GZWF0dXJlUnVubmVyJEZlYXR1cmVJZAAAAAAAAAABAgABTAADdXJpdAAOTGphdmEvbmV0L1VSSTt4cHNyAAxqYXZhLm5ldC5VUkmsAXguQ55JqwMAAUwABnN0cmluZ3QAEkxqYXZhL2xhbmcvU3RyaW5nO3hwdAB7ZmlsZTovLy9EOi9Qcm9ncmFtYcOnw6NvL1dvcmtzcGFjZS9Xb3Jrc3BhY2UtRWNsaXBzZS9TRU5BSS9FeGVyY2ljaW9DYW1pc2V0YXMvc3JjL3Rlc3QvcmVzb3VyY2VzL2ZlYXR1cmVsb3RlY2FtaXNhcy5mZWF0dXJleA==]/[test:rO0ABXNyAChpby5jdWN1bWJlci5qdW5pdC5QaWNrbGVSdW5uZXJzJFBpY2tsZUlkAAAAAAAAAAECAAJJAApwaWNrbGVMaW5lTAADdXJpdAAOTGphdmEvbmV0L1VSSTt4cAAAAAJzcgAMamF2YS5uZXQuVVJJrAF4LkOeSasDAAFMAAZzdHJpbmd0ABJMamF2YS9sYW5nL1N0cmluZzt4cHQAe2ZpbGU6Ly8vRDovUHJvZ3JhbWHDp8Ojby9Xb3Jrc3BhY2UvV29ya3NwYWNlLUVjbGlwc2UvU0VOQUkvRXhlcmNpY2lvQ2FtaXNldGFzL3NyYy90ZXN0L3Jlc291cmNlcy9mZWF0dXJlbG90ZWNhbWlzYXMuZmVhdHVyZXg=]">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'A quantidade total de itens: 30' and 8 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("A quantidade total de itens: {int}")
+public void aQuantidadeTotalDeItens(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("Cadastra {int} camisetas da cor {string} e tamanho {string}")
+public void cadastraCamisetasDaCorETamanho(Integer int1, String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("Muda o status da produção como finalizada")
+public void mudaOStatusDaProduçãoComoFinalizada() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Finalizada a produção uma nota fiscal é emitida para cada lote")
+public void finalizadaAProduçãoUmaNotaFiscalÉEmitidaParaCadaLote() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Detalhando as informações do lote e lista as camisetas do lote")
+public void detalhandoAsInformaçõesDoLoteEListaAsCamisetasDoLote() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Gera um código de validação para o despacho")
+public void geraUmCódigoDeValidaçãoParaODespacho() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("o lote é marcado como pronto para envio")
+public void oLoteÉMarcadoComoProntoParaEnvio() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Foram fabricados camisetas da cor branco" classname="Foram fabricados camisetas da cor branco" time="0.01" uniqueid="[engine:junit-vintage]/[runner:lote.runners.runnWith]/[test:rO0ABXNyAClpby5jdWN1bWJlci5qdW5pdC5GZWF0dXJlUnVubmVyJEZlYXR1cmVJZAAAAAAAAAABAgABTAADdXJpdAAOTGphdmEvbmV0L1VSSTt4cHNyAAxqYXZhLm5ldC5VUkmsAXguQ55JqwMAAUwABnN0cmluZ3QAEkxqYXZhL2xhbmcvU3RyaW5nO3hwdAB7ZmlsZTovLy9EOi9Qcm9ncmFtYcOnw6NvL1dvcmtzcGFjZS9Xb3Jrc3BhY2UtRWNsaXBzZS9TRU5BSS9FeGVyY2ljaW9DYW1pc2V0YXMvc3JjL3Rlc3QvcmVzb3VyY2VzL2ZlYXR1cmVsb3RlY2FtaXNhcy5mZWF0dXJleA==]/[test:rO0ABXNyAChpby5jdWN1bWJlci5qdW5pdC5QaWNrbGVSdW5uZXJzJFBpY2tsZUlkAAAAAAAAAAECAAJJAApwaWNrbGVMaW5lTAADdXJpdAAOTGphdmEvbmV0L1VSSTt4cAAAAA1zcgAMamF2YS5uZXQuVVJJrAF4LkOeSasDAAFMAAZzdHJpbmd0ABJMamF2YS9sYW5nL1N0cmluZzt4cHQAe2ZpbGU6Ly8vRDovUHJvZ3JhbWHDp8Ojby9Xb3Jrc3BhY2UvV29ya3NwYWNlLUVjbGlwc2UvU0VOQUkvRXhlcmNpY2lvQ2FtaXNldGFzL3NyYy90ZXN0L3Jlc291cmNlcy9mZWF0dXJlbG90ZWNhbWlzYXMuZmVhdHVyZXg=]">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'A quantidade total de itens: 30' and 8 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("A quantidade total de itens: {int}")
+public void aQuantidadeTotalDeItens(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("Cadastra {int} camisetas da cor {string} e tamanho {string}")
+public void cadastraCamisetasDaCorETamanho(Integer int1, String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("Muda o status da produção como finalizada")
+public void mudaOStatusDaProduçãoComoFinalizada() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Finalizada a produção uma nota fiscal é emitida para cada lote")
+public void finalizadaAProduçãoUmaNotaFiscalÉEmitidaParaCadaLote() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Detalhando as informações do lote e lista as camisetas do lote")
+public void detalhandoAsInformaçõesDoLoteEListaAsCamisetasDoLote() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Gera um código de validação para o despacho")
+public void geraUmCódigoDeValidaçãoParaODespacho() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("o lote é marcado como pronto para envio")
+public void oLoteÉMarcadoComoProntoParaEnvio() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Foram fabricados camisetas da cor preta" classname="Foram fabricados camisetas da cor preta" time="0.008" uniqueid="[engine:junit-vintage]/[runner:lote.runners.runnWith]/[test:rO0ABXNyAClpby5jdWN1bWJlci5qdW5pdC5GZWF0dXJlUnVubmVyJEZlYXR1cmVJZAAAAAAAAAABAgABTAADdXJpdAAOTGphdmEvbmV0L1VSSTt4cHNyAAxqYXZhLm5ldC5VUkmsAXguQ55JqwMAAUwABnN0cmluZ3QAEkxqYXZhL2xhbmcvU3RyaW5nO3hwdAB7ZmlsZTovLy9EOi9Qcm9ncmFtYcOnw6NvL1dvcmtzcGFjZS9Xb3Jrc3BhY2UtRWNsaXBzZS9TRU5BSS9FeGVyY2ljaW9DYW1pc2V0YXMvc3JjL3Rlc3QvcmVzb3VyY2VzL2ZlYXR1cmVsb3RlY2FtaXNhcy5mZWF0dXJleA==]/[test:rO0ABXNyAChpby5jdWN1bWJlci5qdW5pdC5QaWNrbGVSdW5uZXJzJFBpY2tsZUlkAAAAAAAAAAECAAJJAApwaWNrbGVMaW5lTAADdXJpdAAOTGphdmEvbmV0L1VSSTt4cAAAABhzcgAMamF2YS5uZXQuVVJJrAF4LkOeSasDAAFMAAZzdHJpbmd0ABJMamF2YS9sYW5nL1N0cmluZzt4cHQAe2ZpbGU6Ly8vRDovUHJvZ3JhbWHDp8Ojby9Xb3Jrc3BhY2UvV29ya3NwYWNlLUVjbGlwc2UvU0VOQUkvRXhlcmNpY2lvQ2FtaXNldGFzL3NyYy90ZXN0L3Jlc291cmNlcy9mZWF0dXJlbG90ZWNhbWlzYXMuZmVhdHVyZXg=]">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'A quantidade total de itens: 30' and 8 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("A quantidade total de itens: {int}")
+public void aQuantidadeTotalDeItens(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("Cadastra {int} camisetas da cor {string} e tamanho {string}")
+public void cadastraCamisetasDaCorETamanho(Integer int1, String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("Muda o status da produção como finalizada")
+public void mudaOStatusDaProduçãoComoFinalizada() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Finalizada a produção uma nota fiscal é emitida para cada lote")
+public void finalizadaAProduçãoUmaNotaFiscalÉEmitidaParaCadaLote() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Detalhando as informações do lote e lista as camisetas do lote")
+public void detalhandoAsInformaçõesDoLoteEListaAsCamisetasDoLote() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Gera um código de validação para o despacho")
+public void geraUmCódigoDeValidaçãoParaODespacho() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("o lote é marcado como pronto para envio")
+public void oLoteÉMarcadoComoProntoParaEnvio() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

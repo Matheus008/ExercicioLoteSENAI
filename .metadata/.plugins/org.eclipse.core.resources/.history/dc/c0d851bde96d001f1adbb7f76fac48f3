@@ -1,0 +1,11 @@
+package lote.teste;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+
+import io.cucumber.core.exception.CucumberException;
+
+public class testeLote {
+	
+	
+	
+}

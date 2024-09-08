@@ -1,0 +1,9 @@
+package lote.teste;
+
+public class testarLotes {
+	
+	public static void name() {
+		
+	}
+	
+}

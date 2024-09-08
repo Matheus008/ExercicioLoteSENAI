@@ -1,8 +1,15 @@
 package lote.steps;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
+import java.util.ArrayList;
+
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -11,51 +18,80 @@ import lote.acoes.NotaFiscal;
 import loteECamisetas.objeto.Lote;
 
 public class stepsLote {
-	
+
 	private Lote lote;
 	private NotaFiscal notaFiscal;
 	private int quantidadeTotal = 0;
 	private Despacho despacho;
-	
-	@Given("A quantidade total do lote que é {int} camisetas")
-	public void aQuantidadeTotalDoLoteQueÉCamisetas(Integer quantidadeTotal) {
-	    lote = new Lote(quantidadeTotal);
+	private ArrayList<Despacho> listaDeProdutosProntoParaDespacho = new ArrayList<>();
+
+	@Before
+	public void setUp() {
+		notaFiscal = new NotaFiscal();
+		lote = new Lote();
+		despacho = new Despacho();
 	}
-	@Given("Sendo {int} camisetas da cor {string} e tamanho {string}")
-	public void sendoCamisetasDaCorETamanho(Integer quantidade, String cor, String tamanho) {
+
+	@Given("A quantidade total de itens: {int} e lote:{int}")
+	public void aQuantidadeTotalDeItensELote(Integer quantidade, Integer numLote) {
+		lote = new Lote(quantidade, numLote);
+		
+		assertNotNull("Número do Lote: "+lote.getNumeroDoLote()+" Data de fabricação: "+lote.getDataDaFabricacao(),lote);
+	}
+	
+	@Given("Cadastra {int} camisetas da cor {string} e tamanho {string}")
+	public void cadastraCamisetasDaCorETamanho(Integer quantidade, String cor, String tamanho) {
+		
+		int notExpected = 0;
 		
 		lote.adicionarCamisas(quantidade, tamanho, cor);
-	    
-		this.quantidadeTotal += quantidade;
 
+		this.quantidadeTotal += quantidade;
+		assertNotEquals(notExpected,lote.getListaDeCamisetas().size());
+		System.out.println(lote.listarCamisas());
 	}
-	@Given("Coloca a produção como finalizada")
-	public void colocaAProduçãoComoFinalizadaGeraOCódigoDoLote() {
+
+	@Given("Muda o status da produção como finalizada")
+	public void mudaOStatusDaProduçãoComoFinalizada() {
+		assertEquals(lote.getQuantidadeTotalDePecas(), this.quantidadeTotal);
+
+		lote.producaoFinalizada();
+		this.quantidadeTotal = 0;
+	}
+
+	@When("Finalizada a produção uma nota fiscal é emitida para cada lote")
+	public void finalizadaAProduçãoUmaNotaFiscalÉEmitidaParaCadaLote() {
+		assertTrue(lote.isProducaoFinalizada());
+		notaFiscal.emitirNotaFiscal(lote);
 		
-		assertEquals(lote.getQuantidadeTotalDePecas(), quantidadeTotal);
-		
-	    lote.producaoFinalizada();
-	    quantidadeTotal = 0;
+		assertNotNull(notaFiscal.getNumeroDaNotaFiscal());
 	}
-	@When("Finalizada emite o número da nota fiscal")
-	public void finalizadaEmiteONúmeroDaNotaFiscal() {
-	    assertTrue(lote.isProducaoFinalizada());
-	    notaFiscal = new NotaFiscal(lote);
+
+	@When("Detalhando as informações do lote e lista as camisetas do lote")
+	public void detalhandoAsInformaçõesDoLoteEListaAsCamisetasDoLote() {
+		System.out.println(notaFiscal.conteudoDaNotaFiscal());
 	}
-	@Then("Coloca o lote como pronto para envio")
-	public void colocaOLoteComoProntoParaEnvio() {
-	    lote.prontoParaEnvio();
-	}
-	@Then("É preparado para despacho")
-	public void éPreparadoParaDespacho() {
-	    
-		assertTrue(lote.isProntoParaEnvio());
-		
+
+	@Then("Gera um código de validação para o despacho")
+	public void geraUmCódigoDeValidaçãoParaODespacho() {
+		assertTrue(notaFiscal.isNotaFiscalEmitida());
 		despacho = new Despacho(notaFiscal);
+		
+		assertNotNull(despacho.getCodigoDeValidacao());
+		
 	}
-	@Then("Gera um código de validação")
-	public void geraUmCódigoDeValidação() {
-	    despacho.setCodigoDeValidacao(despacho.gerarNumero());
+
+	@Then("o lote é marcado como pronto para envio")
+	public void oLoteÉMarcadoComoProntoParaEnvio() {
+		despacho.prontoParaEnvio();
+		
+		assertTrue(despacho.isProntoParaEnvio());
+	}
+
+	@After
+	public void adicionarNaListaDeDespacho() {
+		listaDeProdutosProntoParaDespacho.add(despacho);
+		
 	}
 
 }

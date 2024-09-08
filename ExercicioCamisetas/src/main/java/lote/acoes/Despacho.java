@@ -6,28 +6,42 @@ public class Despacho {
 	
 	private int codigoDeValidacao;
 	private NotaFiscal notaFiscal;
+	private boolean prontoParaEnvio = false;
 	
+	public Despacho() {
+	}
 	
 	public Despacho(NotaFiscal notaFiscal) {
+		this.codigoDeValidacao = gerarNumero();
 		this.notaFiscal = notaFiscal;
 	}
+	
+	public void prontoParaEnvio() {
+		prontoParaEnvio = true;
+	}
+	
 
 	public int gerarNumero() {
-		Random numeroAleatorio = new Random();
+		Random numeroAleatorio = new Random(1);
 		return numeroAleatorio.nextInt(1000);
 	}
 
 	public int getCodigoDeValidacao() {
 		return codigoDeValidacao;
 	}
+	
+	public boolean isProntoParaEnvio() {
+		return prontoParaEnvio;
+	}
 
-	public void setCodigoDeValidacao(int codigoDeValidacao) {
-		this.codigoDeValidacao = codigoDeValidacao;
+	public void setProntoParaEnvio(boolean prontoParaEnvio) {
+		this.prontoParaEnvio = prontoParaEnvio;
 	}
 
 	@Override
 	public String toString() {
-		return "Despacho codigoDeValidacao=" + codigoDeValidacao + ", notaFiscal=" + notaFiscal + "]";
+		return "Código de validacao: " + codigoDeValidacao 
+				+ "\n" + notaFiscal.conteudoDaNotaFiscal();
 	}
 	
 	

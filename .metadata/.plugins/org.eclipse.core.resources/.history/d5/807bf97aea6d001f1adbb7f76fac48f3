@@ -1,0 +1,33 @@
+Feature: Produção de camisetas
+	Scenario: A empresa têxtil "Camisetas S.A." produz camisetas de diversos tamanhos (P, M, G) e cores
+	(Branco, Preto, Azul). O processo de produção é dividido em lotes, onde cada lote possui
+	um número identificador, data de fabricação e uma quantidade total de itens. Os itens de
+	cada lote são cadastrados com suas respectivas informações de tamanho e cor. Após a
+	produção, uma nota fiscal é emitida para cada lote, detalhando a quantidade total de
+	camisetas por tamanho e cor. Finalmente, o lote é preparado para despacho, onde um
+	código de validação é gerado e o lote é marcado como pronto para envio.
+		Given A quantidade total de itens que é 30 gera um número identificador e a data de fabricação
+		And Cadastra 10 camisetas da cor "Azul" e tamanho "P"
+		And Cadastra 10 camisetas da cor "Azul" e tamanho "M"
+		And Cadastra 10 camisetas da cor "Azul" e tamanho "G"
+		And Muda o status da produção como finalizada
+		When Finalizada a produção uma nota fiscal é emitida para cada lote
+		And Detalhando as informações do lote e lista as camisetas do lote
+		Then Gera um código de validação para o despacho
+		And o lote é marcado como pronto para envio
+	Scenario: A empresa têxtil "Camisetas S.A." produz camisetas de diversos tamanhos (P, M, G) e cores
+	(Branco, Preto, Azul). O processo de produção é dividido em lotes, onde cada lote possui
+	um número identificador, data de fabricação e uma quantidade total de itens. Os itens de
+	cada lote são cadastrados com suas respectivas informações de tamanho e cor. Após a
+	produção, uma nota fiscal é emitida para cada lote, detalhando a quantidade total de
+	camisetas por tamanho e cor. Finalmente, o lote é preparado para despacho, onde um
+	código de validação é gerado e o lote é marcado como pronto para envio.
+		Given A quantidade total de itens que é 30 gera um número identificador e a data de fabricação
+		And Cadastra 10 camisetas da cor "Azul" e tamanho "P"
+		And Cadastra 10 camisetas da cor "Azul" e tamanho "M"
+		And Cadastra 10 camisetas da cor "Azul" e tamanho "G"
+		And Muda o status da produção como finalizada
+		When Finalizada a produção uma nota fiscal é emitida para cada lote
+		And Detalhando as informações do lote e lista as camisetas do lote
+		Then Gera um código de validação para o despacho
+		And o lote é marcado como pronto para envio
