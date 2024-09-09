@@ -1,13 +1,8 @@
-io.cucumber.junit.UndefinedStepException: The step 'Gera um código de validação para o despacho' and 1 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
+io.cucumber.junit.UndefinedStepException: The step 'A quantidade total de itens: 30 e lote:123' is undefined.
+You can implement this step using the snippet(s) below:
 
-@Then("Gera um código de validação para o despacho")
-public void geraUmCódigoDeValidaçãoParaODespacho() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then("o lote é marcado como pronto para envio")
-public void oLoteÉMarcadoComoProntoParaEnvio() {
+@Given("A quantidade total de itens: {int} e lote:{int}")
+public void aQuantidadeTotalDeItensELote(Integer int1, Integer int2) {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }

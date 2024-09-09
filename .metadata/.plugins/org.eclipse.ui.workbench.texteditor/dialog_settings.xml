@@ -6,13 +6,16 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="prontoParaDespacho"/>
+		<item key="selection" value="String"/>
 		<list key="findhistory">
+			<item value="LocalDate"/>
+			<item value="&#x09;@Test"/>
 			<item value="prontoParaEnvio"/>
 			<item value="prontoParaDespacho"/>
 			<item value="producaoFinalizada"/>
 		</list>
 		<list key="replacehistory">
+			<item value="String"/>
 			<item value="prontoParaDespacho"/>
 			<item value=""/>
 		</list>

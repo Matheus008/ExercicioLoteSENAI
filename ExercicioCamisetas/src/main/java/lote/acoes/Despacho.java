@@ -33,16 +33,5 @@ public class Despacho {
 	public boolean isProntoParaEnvio() {
 		return prontoParaEnvio;
 	}
-
-	public void setProntoParaEnvio(boolean prontoParaEnvio) {
-		this.prontoParaEnvio = prontoParaEnvio;
-	}
-
-	@Override
-	public String toString() {
-		return "Código de validacao: " + codigoDeValidacao 
-				+ "\n" + notaFiscal.conteudoDaNotaFiscal();
-	}
-	
 	
 }

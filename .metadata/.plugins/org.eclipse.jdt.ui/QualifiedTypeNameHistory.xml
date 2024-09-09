@@ -2,20 +2,30 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
-    <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
     <fullyQualifiedTypeName name="io.cucumber.junit.Cucumber"/>
     <fullyQualifiedTypeName name="io.cucumber.junit.CucumberOptions"/>
     <fullyQualifiedTypeName name="io.cucumber.junit.CucumberOptions.SnippetType"/>
-    <fullyQualifiedTypeName name="io.cucumber.java.BeforeAll"/>
-    <fullyQualifiedTypeName name="lote.acoes.NotaFiscal"/>
-    <fullyQualifiedTypeName name="loteECamisetas.objeto.Lote"/>
     <fullyQualifiedTypeName name="io.cucumber.java.Before"/>
     <fullyQualifiedTypeName name="loteECamisetas.objeto.Camisetas"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="org.junit.After"/>
     <fullyQualifiedTypeName name="io.cucumber.java.After"/>
+    <fullyQualifiedTypeName name="io.cucumber.java.BeforeAll"/>
+    <fullyQualifiedTypeName name="lote.steps.stepsLote"/>
+    <fullyQualifiedTypeName name="loteECamisetas.objeto.Lote"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.params.shadow.com.univocity.parsers.annotations.Nested"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Nested"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.extension.ExtendWith"/>
+    <fullyQualifiedTypeName name="io.cucumber.core.exception.CucumberException"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.DisplayName"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="org.junit.Ignore"/>
+    <fullyQualifiedTypeName name="lote.acoes.NotaFiscal"/>
     <fullyQualifiedTypeName name="lote.acoes.Despacho"/>
+    <fullyQualifiedTypeName name="io.cucumber.java.AfterAll"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.AfterAll"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>
