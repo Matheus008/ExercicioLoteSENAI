@@ -23,13 +23,20 @@ public class stepsLote {
 	private NotaFiscal notaFiscal;
 	private int quantidadeTotal = 0;
 	private Despacho despacho;
-	private ArrayList<Despacho> listaDeProdutosProntoParaDespacho = new ArrayList<>();
 
 	@Before
 	public void setUp() {
 		notaFiscal = new NotaFiscal();
 		lote = new Lote();
 		despacho = new Despacho();
+	}
+	
+	@After
+	public void adicionarNaListaDeDespacho() { // Limpar memória
+		System.out.println(despacho.toString());
+		notaFiscal = null;
+		lote = null;
+		despacho = null; 
 	}
 
 	@Given("A quantidade total de itens: {int} e lote:{int}")
@@ -86,12 +93,6 @@ public class stepsLote {
 		despacho.prontoParaEnvio();
 		
 		assertTrue(despacho.isProntoParaEnvio());
-	}
-
-	@After
-	public void adicionarNaListaDeDespacho() {
-		listaDeProdutosProntoParaDespacho.add(despacho);
-		
 	}
 
 }

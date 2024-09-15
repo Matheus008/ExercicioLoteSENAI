@@ -33,5 +33,11 @@ public class Despacho {
 	public boolean isProntoParaEnvio() {
 		return prontoParaEnvio;
 	}
+
+	@Override
+	public String toString() {
+		return "Despacho codigo de validação: " + codigoDeValidacao + ", nota fiscal: " + notaFiscal.getNumeroDaNotaFiscal() ;
+	}
+	
 	
 }
